@@ -40,7 +40,7 @@ def runExploits():
 if __name__ == '__main__':
     init(convert=True)
     os.chdir(os.path.dirname(__file__))
-    if(os.path.isdir(os.getcwd() + "/exploits")):
+    if(os.path.isdir(os.getcwd() + "/tests")):
         runExploits()
     else:
-        print(f"[{Fore.RED}ERROR{Style.RESET_ALL}] Could not find './exploits'...")
+        print(f"[{Fore.RED}ERROR{Style.RESET_ALL}] Could not find './tests'...")
