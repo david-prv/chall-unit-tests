@@ -6,7 +6,7 @@ from colorama import Fore
 from colorama import Style 
 from colorama import init
 
-def runExploits():
+def runTests():
     # map unit test to corresponding exptected output
     tests = {
         'flag1.py': 'FLAG_HERE',
@@ -41,6 +41,6 @@ if __name__ == '__main__':
     init(convert=True)
     os.chdir(os.path.dirname(__file__))
     if(os.path.isdir(os.getcwd() + "/tests")):
-        runExploits()
+        runTests()
     else:
         print(f"[{Fore.RED}ERROR{Style.RESET_ALL}] Could not find './tests'...")
