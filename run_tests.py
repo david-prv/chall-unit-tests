@@ -21,7 +21,7 @@ def runExploits():
     for i in tests:
         print(f"[{Fore.LIGHTCYAN_EX}INFO{Style.RESET_ALL}] Running test '{i}'...")
 
-        r = subprocess.run(['python3', './exploits/' + i], stdout=subprocess.PIPE)
+        r = subprocess.run(['python3', './tests/' + i], stdout=subprocess.PIPE)
         r = r.stdout.decode('ascii')
         exp = tests[i]
 
