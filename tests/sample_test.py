@@ -36,11 +36,8 @@ Takes @target ip and @port and runs main attack
 methods on specified host
 """
 def exploit(target, port):
-    # TODO: Write your exploit here
-    output = ""
-
-    # Get flags from output
-    printFlags(output)
+    # TODO: Write your test here
+    pass
 
 if __name__ == '__main__':
     exploit(sys.argv[1] if len(sys.argv) > 1 else TARGET_HOST, sys.argv[2] if len(sys.argv) > 2 else TARGET_PORT)
