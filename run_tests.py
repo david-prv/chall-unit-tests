@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import time
 import os
 import subprocess
 from colorama import Fore
@@ -41,6 +42,9 @@ if __name__ == '__main__':
     init(convert=True)
     os.chdir(os.path.dirname(__file__))
     if(os.path.isdir(os.getcwd() + "/tests")):
+        a = time.perf_counter()
         runTests()
+        b = time.perf_counter()
+        print(f"[{Fore.LIGHTCYAN_EX}INFO{Style.RESET_ALL}] Took {b-a} seconds")
     else:
         print(f"[{Fore.RED}ERROR{Style.RESET_ALL}] Could not find './tests'...")
