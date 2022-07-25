@@ -1,0 +1,4 @@
+{
+  "test_file_name.py": "expected_output_string",
+  "another_test_file.py": "just_another_output"
+}
