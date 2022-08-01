@@ -15,6 +15,8 @@ sess.auth = (TARGET_USER, TARGET_PASS)
 test:
 Takes @target ip and @port and runs main attack
 methods on specified host
+
+EXPECTED: "True"
 """
 def test(target, port):
     r = sess.get(f"http://{target}:{port}/admin").text
