@@ -17,6 +17,8 @@ sess.auth = (TARGET_USER, TARGET_PASS)
 test:
 Takes @target ip and @port and runs main attack
 methods on specified host
+
+EXPECTED: "contenttype: image/png | status: 200 | random input resulted in: 403"
 """
 def test(target, port):
     try:
